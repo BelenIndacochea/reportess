@@ -43,6 +43,46 @@
 			<pen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
 	<subDataset name="BODEGA" uuid="1056efa7-c9e7-4db6-8275-80a48faa3b95">
 		<queryString language="SQL">
 			<![CDATA[SELECT * FROM BODEGA]]>
@@ -52,14 +92,36 @@
 		<field name="idEmpleado" class="java.lang.Object"/>
 		<field name="area" class="java.lang.Object"/>
 	</subDataset>
+	<subDataset name="bodeg" uuid="c940c579-f9a2-4887-bb6b-77f8af4b3d82">
+		<queryString language="SQL">
+			<![CDATA[SELECT   Empleado.nombres,  bodega.fechaIngreso, bodega.fechaSalida, bodega.idEmpleado
+FROM           bodega INNER JOIN                       Empleado ON bodega.idEmpleado = Empleado.idEmpleado]]>
+		</queryString>
+		<field name="nombres" class="java.lang.Object"/>
+		<field name="fechaIngreso" class="java.lang.Object"/>
+		<field name="fechaSalida" class="java.lang.Object"/>
+		<field name="idEmpleado" class="java.lang.Object"/>
+	</subDataset>
+	<subDataset name="bodg" uuid="6894a9f7-f084-4912-84eb-442872acea97">
+		<queryString language="SQL">
+			<![CDATA[SELECT Empleado.nombres AS EmpleadoEncargado, bodega.fechaIngreso, bodega.fechaSalida, bodega.area As Area
+FROM  bodega INNER JOIN
+ Empleado ON bodega.idEmpleado = Empleado.idEmpleado]]>
+		</queryString>
+		<field name="EmpleadoEncargado" class="java.lang.Object"/>
+		<field name="fechaIngreso" class="java.lang.Object"/>
+		<field name="fechaSalida" class="java.lang.Object"/>
+		<field name="Area" class="java.lang.Object"/>
+	</subDataset>
 	<queryString>
-		<![CDATA[select * from bodega]]>
+		<![CDATA[SELECT Empleado.nombres AS EmpleadoEncargado, bodega.fechaIngreso, bodega.fechaSalida, bodega.area As Area
+FROM  bodega INNER JOIN
+ Empleado ON bodega.idEmpleado = Empleado.idEmpleado]]>
 	</queryString>
-	<field name="idBodega" class="java.lang.Object"/>
+	<field name="EmpleadoEncargado" class="java.lang.Object"/>
 	<field name="fechaIngreso" class="java.lang.Object"/>
 	<field name="fechaSalida" class="java.lang.Object"/>
-	<field name="idEmpleado" class="java.lang.Object"/>
-	<field name="area" class="java.lang.Object"/>
+	<field name="Area" class="java.lang.Object"/>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
@@ -80,84 +142,84 @@
 	<columnHeader>
 		<band height="148" splitType="Stretch">
 			<componentElement>
-				<reportElement uuid="de6d395c-7285-47ba-9ed0-5283c28d501a" key="table 1" style="table 1" x="27" y="0" width="360" height="140"/>
+				<reportElement uuid="22b6c7e9-d6d8-4b45-8035-c1d8118c3a10" key="table 3" style="table 3" x="73" y="8" width="360" height="140"/>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
-					<datasetRun subDataset="BODEGA" uuid="9efeb19d-e802-4054-8998-ade908f81ab7">
+					<datasetRun subDataset="bodg" uuid="990eb0f4-2fef-481d-8c4a-757652b6acd9">
 						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
 					</datasetRun>
-					<jr:column uuid="aa1e4d3a-442b-459d-9736-5eec5def2f2b" width="90">
-						<jr:tableHeader style="table 1_TH" height="30"/>
-						<jr:tableFooter style="table 1_TH" height="30"/>
-						<jr:columnHeader style="table 1_CH" height="30">
+					<jr:column uuid="37c97768-6225-4231-a27a-750620af0309" width="90">
+						<jr:tableHeader style="table 3_TH" height="30"/>
+						<jr:tableFooter style="table 3_TH" height="30"/>
+						<jr:columnHeader style="table 3_CH" height="30">
 							<staticText>
-								<reportElement uuid="4ab96a74-aa23-4b14-a6e6-29c56e7f48fb" x="0" y="0" width="90" height="30"/>
+								<reportElement uuid="d7983345-0042-48fb-81a1-026f0245ff42" x="0" y="0" width="90" height="30"/>
+								<textElement/>
+								<text><![CDATA[EmpleadoEncargado]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 3_CH" height="30"/>
+						<jr:detailCell style="table 3_TD" height="20">
+							<textField>
+								<reportElement uuid="a17f0a5a-4322-44c6-b8af-9000cbb0f058" x="0" y="0" width="90" height="20"/>
+								<textElement/>
+								<textFieldExpression><![CDATA[""+$F{EmpleadoEncargado}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column uuid="7bdb5753-2b6d-4bba-bfe5-b8105ccc70b7" width="90">
+						<jr:tableHeader style="table 3_TH" height="30"/>
+						<jr:tableFooter style="table 3_TH" height="30"/>
+						<jr:columnHeader style="table 3_CH" height="30">
+							<staticText>
+								<reportElement uuid="04483811-ad07-42d4-ab9d-6e9b76f2cf05" x="0" y="0" width="90" height="30"/>
 								<textElement/>
 								<text><![CDATA[fechaIngreso]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:columnFooter style="table 1_CH" height="30"/>
-						<jr:detailCell style="table 1_TD" height="20">
+						<jr:columnFooter style="table 3_CH" height="30"/>
+						<jr:detailCell style="table 3_TD" height="20">
 							<textField>
-								<reportElement uuid="196c5dd4-3e5f-4fb1-981a-26c736b64c62" x="0" y="0" width="90" height="20"/>
+								<reportElement uuid="037f058d-970f-4549-bba1-2fe785fa5e1b" x="0" y="0" width="90" height="20"/>
 								<textElement/>
 								<textFieldExpression><![CDATA[""+$F{fechaIngreso}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column uuid="54bb04cd-8bef-4f53-a78f-b2af43c7ea00" width="90">
-						<jr:tableHeader style="table 1_TH" height="30"/>
-						<jr:tableFooter style="table 1_TH" height="30"/>
-						<jr:columnHeader style="table 1_CH" height="30">
+					<jr:column uuid="a43f6134-830e-4359-a102-180f2c5c728c" width="90">
+						<jr:tableHeader style="table 3_TH" height="30"/>
+						<jr:tableFooter style="table 3_TH" height="30"/>
+						<jr:columnHeader style="table 3_CH" height="30">
 							<staticText>
-								<reportElement uuid="54e8250e-c163-4666-9b1c-5dd2ff657828" x="0" y="0" width="90" height="30"/>
+								<reportElement uuid="7bcae2de-2eed-43c2-b676-bde3980ca266" x="0" y="0" width="90" height="30"/>
 								<textElement/>
 								<text><![CDATA[fechaSalida]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:columnFooter style="table 1_CH" height="30"/>
-						<jr:detailCell style="table 1_TD" height="20">
+						<jr:columnFooter style="table 3_CH" height="30"/>
+						<jr:detailCell style="table 3_TD" height="20">
 							<textField>
-								<reportElement uuid="491bcb86-3c5d-457c-a5d1-8c2da1455e4e" x="0" y="0" width="90" height="20"/>
+								<reportElement uuid="27500014-4691-4cac-bc0c-8603e0bde642" x="0" y="0" width="90" height="20"/>
 								<textElement/>
 								<textFieldExpression><![CDATA[""+$F{fechaSalida}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column uuid="11d99db0-2d1e-40f0-927a-32112da1d9be" width="90">
-						<jr:tableHeader style="table 1_TH" height="30"/>
-						<jr:tableFooter style="table 1_TH" height="30"/>
-						<jr:columnHeader style="table 1_CH" height="30">
+					<jr:column uuid="23fd6aa0-9154-4c20-9aba-63c7e66a3e10" width="90">
+						<jr:tableHeader style="table 3_TH" height="30"/>
+						<jr:tableFooter style="table 3_TH" height="30"/>
+						<jr:columnHeader style="table 3_CH" height="30">
 							<staticText>
-								<reportElement uuid="f29ecc9f-f355-47ae-a75a-fbda60d11808" x="0" y="0" width="90" height="30"/>
+								<reportElement uuid="8414a815-e097-40e2-8119-345a7864b2ca" x="0" y="0" width="90" height="30"/>
 								<textElement/>
-								<text><![CDATA[idEmpleado]]></text>
+								<text><![CDATA[Area]]></text>
 							</staticText>
 						</jr:columnHeader>
-						<jr:columnFooter style="table 1_CH" height="30"/>
-						<jr:detailCell style="table 1_TD" height="20">
+						<jr:columnFooter style="table 3_CH" height="30"/>
+						<jr:detailCell style="table 3_TD" height="20">
 							<textField>
-								<reportElement uuid="13b41cec-d6dd-4b36-a9ae-0ca1eee064a3" x="0" y="0" width="90" height="20"/>
+								<reportElement uuid="8806d662-dd9e-40e4-b326-78faecb15748" x="0" y="0" width="90" height="20"/>
 								<textElement/>
-								<textFieldExpression><![CDATA[""+$F{idEmpleado}]]></textFieldExpression>
-							</textField>
-						</jr:detailCell>
-					</jr:column>
-					<jr:column uuid="746f07ce-78c4-4c9a-af5d-0cc91ed1c5e5" width="90">
-						<jr:tableHeader style="table 1_TH" height="30"/>
-						<jr:tableFooter style="table 1_TH" height="30"/>
-						<jr:columnHeader style="table 1_CH" height="30">
-							<staticText>
-								<reportElement uuid="ddd19973-2109-4369-962f-9f552ccc8f54" x="0" y="0" width="90" height="30"/>
-								<textElement/>
-								<text><![CDATA[area]]></text>
-							</staticText>
-						</jr:columnHeader>
-						<jr:columnFooter style="table 1_CH" height="30"/>
-						<jr:detailCell style="table 1_TD" height="20">
-							<textField>
-								<reportElement uuid="68d61ca6-50aa-4047-bfb9-9ba61fce044d" x="0" y="0" width="90" height="20"/>
-								<textElement/>
-								<textFieldExpression><![CDATA[""+$F{area}]]></textFieldExpression>
+								<textFieldExpression><![CDATA[""+$F{Area}]]></textFieldExpression>
 							</textField>
 						</jr:detailCell>
 					</jr:column>
