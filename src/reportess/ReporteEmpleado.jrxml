@@ -58,8 +58,7 @@
 		<defaultValueExpression><![CDATA["C:\\Users\\Isaac\\Documents\\NetBeansProjects\\ProgramaIndumaster\\src\\Reportes\\"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
-		<![CDATA[select  * from empleado
-]]>
+		<![CDATA[select  * from empleado]]>
 	</queryString>
 	<field name="idEmpleado" class="java.lang.Object"/>
 	<field name="cedula" class="java.lang.Object"/>
@@ -86,10 +85,6 @@
 				</textElement>
 				<text><![CDATA[Reporte de Empleado]]></text>
 			</staticText>
-			<image>
-				<reportElement uuid="912e9240-0ede-47a9-b058-f43d91496675" x="416" y="4" width="140" height="37"/>
-				<imageExpression><![CDATA["C:\\Users\\Isaac\\Desktop\\INDUMASTER.gif"]]></imageExpression>
-			</image>
 		</band>
 	</title>
 	<pageHeader>
