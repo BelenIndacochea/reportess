@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e36cbae3-407a-444c-a135-649ad01955da">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 5_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 6_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 7_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 8_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 9_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="ReporteProducto" uuid="195c3b60-cfee-48ad-bb1f-534d70e00e08">
+		<queryString language="SQL">
+			<![CDATA[select * from producto]]>
+		</queryString>
+		<field name="costo" class="java.lang.Object"/>
+		<field name="numeroSerie" class="java.lang.Object"/>
+		<field name="precio" class="java.lang.Object"/>
+		<field name="nombre" class="java.lang.Object"/>
+		<field name="descripcion" class="java.lang.Object"/>
+	</subDataset>
+	<subDataset name="rp" uuid="8ccd324b-da42-4339-939e-b809cb1184f5">
+		<queryString language="SQL">
+			<![CDATA[select * from producto;]]>
+		</queryString>
+		<field name="idProducto" class="java.lang.Object"/>
+		<field name="costo" class="java.lang.Object"/>
+		<field name="iva" class="java.lang.Object"/>
+		<field name="numeroSerie" class="java.lang.Object"/>
+		<field name="precio" class="java.lang.Object"/>
+		<field name="precioEspecial" class="java.lang.Object"/>
+		<field name="nombre" class="java.lang.Object"/>
+		<field name="descripcion" class="java.lang.Object"/>
+	</subDataset>
+	<subDataset name="RP" uuid="0cc1be34-37e9-4157-b4e9-fefa83d91909">
+		<queryString language="SQL">
+			<![CDATA[SELECT
+     *
+FROM
+     PRODUCTO; PRODUCTO;]]>
+		</queryString>
+		<field name="idProducto" class="java.lang.Object"/>
+		<field name="costo" class="java.lang.Object"/>
+		<field name="iva" class="java.lang.Object"/>
+		<field name="numeroSerie" class="java.lang.Object"/>
+		<field name="precio" class="java.lang.Object"/>
+		<field name="precioEspecial" class="java.lang.Object"/>
+		<field name="nombre" class="java.lang.Object"/>
+		<field name="descripcion" class="java.lang.Object"/>
+	</subDataset>
+	<queryString language="SQL">
+		<![CDATA[select * from producto;]]>
+	</queryString>
+	<field name="numeroSerie" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="85" y="21" width="327" height="34" uuid="e102cbce-6484-421a-b674-447ce07d678c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="24" isBold="true" isItalic="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE PRODUCTOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="144" splitType="Stretch">
+			<componentElement>
+				<reportElement key="table 9" style="table 9" x="38" y="4" width="360" height="140" uuid="f6127f48-2925-438e-8ec5-ce0ed70ab5bf"/>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="ReporteProducto" uuid="efbb9e5e-f393-471d-b330-7ff6c2f1fe97">
+						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					</datasetRun>
+					<jr:column width="90" uuid="a2355139-0f54-4c88-8097-400e7261d8dd">
+						<jr:tableHeader style="table 9_TH" height="30"/>
+						<jr:tableFooter style="table 9_TH" height="30"/>
+						<jr:columnHeader style="table 9_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="d3902f38-37b9-416a-a9a4-e88e6273694a"/>
+								<text><![CDATA[costo]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 9_CH" height="30"/>
+						<jr:detailCell style="table 9_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="e30fd186-3670-4a7b-baef-1587b45a6b3f"/>
+								<textFieldExpression><![CDATA[""+$F{costo}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="91a93b4e-a477-4596-b678-f21ef8370f78">
+						<jr:tableHeader style="table 9_TH" height="30"/>
+						<jr:tableFooter style="table 9_TH" height="30"/>
+						<jr:columnHeader style="table 9_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="60282cda-5597-4908-b25c-e4352af56fdb"/>
+								<text><![CDATA[numeroSerie]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 9_CH" height="30"/>
+						<jr:detailCell style="table 9_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="444d1cb7-b531-457a-9b49-2ba873b911df"/>
+								<textFieldExpression><![CDATA[""+$F{numeroSerie}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="410c5ee6-d84f-45d1-8c7d-1ce08b1736c2">
+						<jr:tableHeader style="table 9_TH" height="30"/>
+						<jr:tableFooter style="table 9_TH" height="30"/>
+						<jr:columnHeader style="table 9_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="77a08c8e-46dc-471e-a5b8-1545ee25531c"/>
+								<text><![CDATA[precio]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 9_CH" height="30"/>
+						<jr:detailCell style="table 9_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="f30688d6-42cd-4efa-9491-a975a8c25d61"/>
+								<textFieldExpression><![CDATA[""+$F{precio}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="f61d7766-57d9-4ac7-8f60-7dce9e5a0165">
+						<jr:tableHeader style="table 9_TH" height="30"/>
+						<jr:tableFooter style="table 9_TH" height="30"/>
+						<jr:columnHeader style="table 9_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="c4ff524d-1ab9-41e5-8ded-8f28e81c3404"/>
+								<text><![CDATA[nombre]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 9_CH" height="30"/>
+						<jr:detailCell style="table 9_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="57394fcf-fce1-494c-9721-a34dc4220188"/>
+								<textFieldExpression><![CDATA[""+$F{nombre}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="93f0d098-033e-4575-84c2-96f880b200a4">
+						<jr:tableHeader style="table 9_TH" height="30"/>
+						<jr:tableFooter style="table 9_TH" height="30"/>
+						<jr:columnHeader style="table 9_CH" height="30">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="13b2cdd7-9240-45aa-8ee8-29840864c24d"/>
+								<text><![CDATA[descripcion]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:columnFooter style="table 9_CH" height="30"/>
+						<jr:detailCell style="table 9_TD" height="20">
+							<textField>
+								<reportElement x="0" y="0" width="90" height="20" uuid="a23a313a-7c01-4f65-a0e9-f959c424155c"/>
+								<textFieldExpression><![CDATA[""+$F{descripcion}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
